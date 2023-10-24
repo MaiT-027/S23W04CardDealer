@@ -31,7 +31,7 @@ class CardDealerViewModel : ViewModel() {
     fun checkRank() {
         when {
             isRoyalStraightFlush() -> _rankText.value = "로얄 스트레이트 플러쉬"
-            isBackStraightFlush() -> _rankText.value = "백스트레이트 플러쉬"
+            isBackStraightFlush() -> _rankText.value = "백 스트레이트 플러쉬"
             isStraightFlush() -> _rankText.value = "스트레이트 플러쉬"
             isFourCards() -> _rankText.value = "포 카드"
             isFullHouse() -> _rankText.value = "풀 하우스"
