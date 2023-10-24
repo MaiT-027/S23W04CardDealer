@@ -84,8 +84,8 @@ class CardDealerViewModel : ViewModel() {
     }
 
     private fun isFlush(): Boolean {
-        val suits = _cards.value!!.map { it / 13 }.toList().sorted()
-        return suits.all { it == suits[0] }
+        val shape = _cards.value!!.map { it / 13 }.toList().sorted()
+        return shape.all { it == shape[0] }
     }
 
     private fun isBackStraight(): Boolean {
